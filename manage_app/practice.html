@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="your_paragraph">This text will change, after clicking the button.</p>
+Main News: <input type="text" id="theText" />
+<input type="button" id="btn" value="Update" />
+
+<script>
+    var p = document.getElementById('your_paragraph');
+var btn = document.getElementById('btn');
+var txt = document.getElementById('theText');
+btn.onclick = function(){
+    p.textContent = txt.value;
+};
+</script>
+</body>
+</html>
